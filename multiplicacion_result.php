@@ -17,7 +17,7 @@
                                                 echo $valor;
                                                 ?> </h3>
         <?php
-        $valorInicial = 0;
+        $valorInicial = 1;
         $valorFinal = 20;
         echo "<div>";
         echo "<table class='table-bordered table-hover text-center' style='width:300px'>";
