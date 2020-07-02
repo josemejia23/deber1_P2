@@ -10,7 +10,8 @@
 <hr>
 <div id="comboBox" > 
 <label for="cal">Seleccione una figura:</label>
-  <select name="cal" id="calcular">
+  <select name="cal" id="calcular"  onchange="Mostrar(this.value)">
+   <option value="0">Selecciones Una figura</option> 
     <option value="1">Triangulo</option>
     <option value="2">Cuadrado</option>
     <option value="3">Rectangulo</option>
@@ -48,10 +49,10 @@
     <input type="number" size=2 name="radio"> <br>
     </div>
 
-
-
+  <hr>
+    <div id="dbtn">
     <input type=submit value="Calcular">
-
+      </div>
 
  </form>
 
@@ -59,3 +60,54 @@
 
  </body>
  </html>
+
+
+  
+<script type="text/javascript">
+function Mostrar($variable){
+ 
+ // alert($variable);
+  if($variable==1)
+  {
+     document.getElementById("dtriangulo").style.display="block";
+      document.getElementById("dcuadrado").style.display="none";
+      document.getElementById("drectangulo").style.display="none";
+      document.getElementById("dcirculo").style.display="none"; 
+      document.getElementById("dbtn").style.display="block";
+  }
+  if($variable==2)
+  {
+     document.getElementById("dtriangulo").style.display="none";
+      document.getElementById("dcuadrado").style.display="block";
+      document.getElementById("drectangulo").style.display="none";
+      document.getElementById("dcirculo").style.display="none"; 
+      document.getElementById("dbtn").style.display="block";
+  }
+  if($variable==3)
+  {
+     document.getElementById("dtriangulo").style.display="none";
+      document.getElementById("dcuadrado").style.display="none";
+      document.getElementById("drectangulo").style.display="block";
+      document.getElementById("dcirculo").style.display="none"; 
+      document.getElementById("dbtn").style.display="block";
+  }
+  if($variable==4)
+  {
+     document.getElementById("dtriangulo").style.display="none";
+      document.getElementById("dcuadrado").style.display="none";
+      document.getElementById("drectangulo").style.display="none";
+      document.getElementById("dcirculo").style.display="block"; 
+      document.getElementById("dbtn").style.display="block";
+  }
+}
+
+    window.onload=function() {
+      document.getElementById("dtriangulo").style.display="none";
+      document.getElementById("dcuadrado").style.display="none";
+      document.getElementById("drectangulo").style.display="none";
+      document.getElementById("dcirculo").style.display="none"; 
+      document.getElementById("dbtn").style.display="none"; 
+
+		}
+
+</script>
