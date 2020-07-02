@@ -47,5 +47,8 @@ $figura="";
             <body>
                 <h1>Calculos: <?= $figura?> </h1>
                 <p> Perimetro: <?= $perimetro?> <br>Area: <?= $area?>  </p>
+                <form name="forma" method="POST" action="./index.html">
+	            	<input type= "submit" value="Volver"/>
+		        </form>
             </body>
         </html>
