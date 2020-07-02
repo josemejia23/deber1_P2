@@ -35,16 +35,9 @@
         echo "</table>";
         echo "</div>";
         ?>
-        <form name="forma" method="POST" action="./index.html">
-		<input type= "submit" value="Volver"/>
-		</form>
     </div>
-<<<<<<< HEAD
     <button class="enlace" role="link" onclick="window.location='./index.html'">Volver Al Menú Principal</button>
 
-=======
-    
->>>>>>> 565af5cd004d1038eeccf432a36422986163b4a3
 
 </body>
 

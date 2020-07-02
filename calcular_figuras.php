@@ -47,13 +47,7 @@ $figura="";
             <body>
                 <h1>Calculos: <?= $figura?> </h1>
                 <p> Perimetro: <?= $perimetro?> <br>Area: <?= $area?>  </p>
-<<<<<<< HEAD
                 <button class="enlace" role="link" onclick="window.location='./index.html'">Volver Al Menú Principal</button>
 
-=======
-                <form name="forma" method="POST" action="./index.html">
-	            	<input type= "submit" value="Volver"/>
-		        </form>
->>>>>>> 565af5cd004d1038eeccf432a36422986163b4a3
             </body>
         </html>
