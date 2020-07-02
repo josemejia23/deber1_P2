@@ -8,7 +8,6 @@
 
 <body>
     <div align="center">
-        <h2>Resultado de la tabla de multiplicar</h2>
         <h3>Número ingresado: <?php
                                 $valor = $_POST['valor'];
                                 echo $valor;
