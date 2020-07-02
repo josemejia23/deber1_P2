@@ -13,5 +13,8 @@
 	<body>
 		<h1> Edad actual  </h1>
 		<p> Desde <?= $Fecha_Nacimiento?> hasta hoy tienes una edad de <?= $edad?> años</p>
+		<form name="forma" method="POST" action="./index.html">
+		<input type= "submit" value="Volver"/>
+		</form>
 	</body>
 </html>
