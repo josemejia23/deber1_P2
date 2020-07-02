@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 <html>
 
 <head>
@@ -13,26 +14,31 @@
                                 echo $valor;
                                 ?></h3>
         <h3>TABLA DE MULTIPLICAR DEL NÚMERO: <?php
-                                $valor = $_POST['valor'];
-                                echo $valor;
-                                ?> </h3>
-                                <?php
-$valorInicial = 0;
-$valorFinal = 20;
+                                                $valor = $_POST['valor'];
+                                                echo $valor;
+                                                ?> </h3>
+        <?php
+        $valorInicial = 0;
+        $valorFinal = 20;
+        echo "<div>";
+        echo "<table class='table-bordered table-hover text-center' style='width:300px'>";
+        echo "<tr>";
 
-if ($valorInicial < $valorFinal) {
-    for ($i = $valorInicial; $i <= $valorFinal; $i++) {
-        echo $valor . ' x ' .  $i . ' = ' .  ($valor * $i) . '<br/>';
-    }
-} else {
-    for ($i = $valorInicial; $i >= $valorFinal; $i--) {
-        echo $valor . ' x ' .  $i . ' = ' .  ($valor * $i) . '<br/>';
-    }
-}
-?>
+        for ($i = $valorInicial; $i <= $valorFinal; $i++) {
+            echo "<td>" . $valor . "</td>";
+            echo "<td>" . "x" . "</td>";
+            echo "<td>" . $i . "</td>";
+            echo "<td>" . "=" . "</td>";
+            echo "<td>" . $valor * $i . "</td>";
+            echo "</tr>";
+        }
+
+        echo "</table>";
+        echo "</div>";
+        ?>
     </div>
-    
-    
+
+
 </body>
 
 </html>
