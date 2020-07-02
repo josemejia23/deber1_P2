@@ -35,8 +35,11 @@
         echo "</table>";
         echo "</div>";
         ?>
+        <form name="forma" method="POST" action="./index.html">
+		<input type= "submit" value="Volver"/>
+		</form>
     </div>
-
+    
 
 </body>
 
