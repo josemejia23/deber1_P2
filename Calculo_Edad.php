@@ -13,5 +13,8 @@
 	<body>
 		<h1> Edad actual  </h1>
 		<p> Desde <?= $Fecha_Nacimiento?> hasta hoy tienes una edad de <?= $edad?> años</p>
+
+		<button class="enlace" role="link" onclick="window.location='./index.html'">Volver Al Menú Principal</button>
+
 	</body>
 </html>

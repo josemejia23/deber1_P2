@@ -36,6 +36,7 @@
         echo "</div>";
         ?>
     </div>
+    <button class="enlace" role="link" onclick="window.location='./index.html'">Volver Al Menú Principal</button>
 
 
 </body>
