@@ -35,9 +35,11 @@
         echo "</table>";
         echo "</div>";
         ?>
+        <br>
     </div>
-    <button class="enlace" role="link" onclick="window.location='../index.html'">Volver Al Menú Principal</button>
-
+    <div align="center">
+        <button class="enlace text-center" role="link" onclick="window.location='../index.html'">Volver Al Menú Principal</button>
+    </div>
 
 </body>
 
