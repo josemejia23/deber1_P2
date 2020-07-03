@@ -21,32 +21,32 @@
 
       <div id="dtriangulo" >
       Introduzca el lado 1: <br>
-      <input type="number" size=2 name="lado1"> <br>
+      <input type="number" size=2 id="l1"  name="lado1" min="0" max="1000" step="1" > <br>
       Introduzca el lado 2: <br>
-      <input type="number" size=2 name="lado2"> <br> 
+      <input type="number" size=2 id="l2" name="lado2" min="0" max="1000" step="1"> <br> 
       Introduzca el lado 3(Base): <br>
-      <input type="number" size=2 name="lado3"> <br> 
+      <input type="number" size=2 id="l3" name="lado3" min="0" max="1000" step="1" > <br> 
       Introduzca la altura: <br>
-      <input type="number" size=2 name="altura"> <br> 
+      <input type="number" size=2 id="h" name="altura" min="0" max="1000" step="1" > <br> 
       </div>
 
       <div id="dcuadrado">
       Introduzca el lado: <br>
-      <input type="number" size=2 name="ladoc"> <br>
+      <input type="number" size=2 id="ladocua" name="ladoc" min="0" max="1000" step="1"> <br>
       </div>
 
       <div id="drectangulo">
       Introduzca el lado 1(a): <br>
-      <input type="number" size=2 name="ladoh"> <br>
+      <input type="number" size=2  id="la" name="ladoh" min="0" max="1000" step="1"> <br>
       Introduzca el lado 2(b): <br>
-      <input type="number" size=2 name="ladob"> <br> 
+      <input type="number" size=2  id="lb" name="ladob" min="0" max="1000" step="1"> <br> 
 
       </div>
 
       
       <div id="dcirculo">
       Introduzca el valor del radio: <br>
-      <input type="number" size=2 name="radio"> <br>
+      <input type="number" size=2 id="ra" name="radio" min="0" max="1000" step="1" > <br>
       </div>
 
     <hr>
@@ -72,6 +72,11 @@ function Mostrar($variable){
       document.getElementById("drectangulo").style.display="none";
       document.getElementById("dcirculo").style.display="none"; 
       document.getElementById("dbtn").style.display="block";
+      document.getElementById("l1").setAttribute("required","true");
+      document.getElementById("l2").setAttribute("required","true");
+      document.getElementById("l3").setAttribute("required","true");
+      document.getElementById("h").setAttribute("required","true");
+      
   }
   if($variable==2)
   {
@@ -80,6 +85,7 @@ function Mostrar($variable){
       document.getElementById("drectangulo").style.display="none";
       document.getElementById("dcirculo").style.display="none"; 
       document.getElementById("dbtn").style.display="block";
+      document.getElementById("ladocua").setAttribute("required","true");
   }
   if($variable==3)
   {
@@ -88,6 +94,8 @@ function Mostrar($variable){
       document.getElementById("drectangulo").style.display="block";
       document.getElementById("dcirculo").style.display="none"; 
       document.getElementById("dbtn").style.display="block";
+      document.getElementById("la").setAttribute("required","true");
+      document.getElementById("lb").setAttribute("required","true");
   }
   if($variable==4)
   {
@@ -96,6 +104,7 @@ function Mostrar($variable){
       document.getElementById("drectangulo").style.display="none";
       document.getElementById("dcirculo").style.display="block"; 
       document.getElementById("dbtn").style.display="block";
+      document.getElementById("ra").setAttribute("required","true");
   }
 }
 
