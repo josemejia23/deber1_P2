@@ -47,7 +47,7 @@ $figura="";
             <body>
                 <h1>Calculos: <?= $figura?> </h1>
                 <p> Perimetro: <?= $perimetro?> <br>Area: <?= $area?>  </p>
-                <button class="enlace" role="link" onclick="window.location='./index.html'">Volver Al Menú Principal</button>
+                <button class="enlace" role="link" onclick="window.location='../index.html'">Volver Al Menú Principal</button>
 
             </body>
         </html>
